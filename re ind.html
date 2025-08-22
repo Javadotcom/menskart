@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menskart</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Navbar */
+    #nav {
+      background: #111;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 10%;
+    }
+
+    #nav h1 {
+      font-size: 24px;
+    }
+
+    #nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    #nav ul li {
+      cursor: pointer;
+      transition: color 0.3s;
+    }
+
+    #nav ul li:hover {
+      color: orange;
+    }
+
+    #search {
+      padding: 5px 10px;
+      border-radius: 4px;
+      border: none;
+    }
+
+    /* Product section */
+    #product {
+      text-align: center;
+      padding: 50px 5%;
+      background: #f4f4f4;
+    }
+
+    #product h2 {
+      margin-bottom: 20px;
+      font-size: 28px;
+    }
+
+    .products {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .box {
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      overflow: hidden;
+      transition: transform 0.3s;
+      background: #fff;
+    }
+
+    .box:hover {
+      transform: scale(1.05);
+      cursor: pointer;
+    }
+
+    .box img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    /* Footer */
+    #footer {
+      background: #111;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div id="nav">
+    <h1>Menskart</h1>
+    <input type="text" id="search" placeholder="Search">
+    <ul>
+      <li>Home</li>
+      <li>About</li>
+      <li>Contact</li>
+    </ul>
+  </div>
+
+  <!-- Product Section -->
+  <div id="product">
+    <h2>Products</h2>
+    <div class="products">
+      <div class="box"><img src="1.jfif" alt="Product 1"></div>
+      <div class="box"><img src="2.jpg" alt="Product 2"></div>
+      <div class="box"><img src="3.jpg" alt="Product 3"></div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <p>&copy; 2025 | Email: kk9750825477@gmail.com</p>
+  </footer>
+
+</body>
+</html>
